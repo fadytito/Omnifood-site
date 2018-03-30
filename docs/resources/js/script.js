@@ -91,24 +91,23 @@ $(document).ready(function () {
         }
     });
 
-
-    /* Map */
-    function initMap() {
-        var map = new GMaps({
-            div: '.map',
-            lat: 38.7436266,
-            lng: -9.05,
-            zoom: 12
-        });
-
-        map.addMarker({
-            lat: 38.7436266,
-            lng: -9.1602037,
-            title: 'Lisbon',
-            infoWindow: {
-                content: '<p>Our Headquarter</p>'
-            }
-        });
-    }
-
 });
+
+/* Map */
+function initMap() {
+    var map = new GMaps({
+        div: '.map',
+        lat: 38.7436266,
+        lng: -9.05,
+        zoom: 12
+    });
+
+    map.addMarker({
+        lat: 38.7436266,
+        lng: -9.1602037,
+        title: 'Lisbon',
+        infoWindow: {
+            content: '<p>Our Headquarter</p>'
+        }
+    });
+}
